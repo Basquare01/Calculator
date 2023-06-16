@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="Css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <form class="calc">
+        <div class="display">
+            <input type="text" name="display" id="display" readonly>
+        </div>
+        <div class="zero">
+            <input type="text" value="AC" id="ClearAll" readonly onclick="display.value = '' ">
+            <input type="text" value="DE" id="Clear" readonly onclick="display.value = display.value.toString().slice(0,-1)">
+            <input type="text" value="^" id="SquareRoot" readonly onclick="display.value+= '^'">
+            <input type="text" value="+" id="plus" readonly onclick="display.value += '+'">
+        </div>
+        <div class="first">
+            <input type="text" value="1" id="one" readonly onclick="display.value += '1' ">
+            <input type="text" value="2" id="two" readonly onclick="display.value += '2'  ">
+            <input type="text" value="3" id="three" readonly onclick="display.value += '3'">
+            <input type="text" value="%" id="Percent" readonly onclick="display.value += '%' ">
+        </div>
+        <div class="second">
+            <input type="text" value="4" id="four" readonly onclick="display.value += '4'">
+            <input type="text" value="5" id="five" readonly onclick="display.value += '5'">
+            <input type="text" value="6" id="six" readonly onclick="display.value += '6'">
+            <input type="text" value="-" id="minus" readonly onclick="display.value+= '-'">
+        </div>
+        <div class="third">
+            <input type="text" value="7" id="seven" readonly onclick="display.value += '7'">
+            <input type="text" value="8" id="eight" readonly onclick="display.value += '8'">
+            <input type="text" value="9" id="nine" readonly onclick="display.value += '9'">
+            <input type="text" value="/" id="division" readonly onclick="display.value+= '/'">
+        </div>
+        <div class="fourth">
+            <input type="text" value="0" id="zero" readonly onclick="display.value += '0'">
+            <input type="text" value="00" id="zero2" readonly onclick="display.value += '00'">
+            <input type="text" value="." id="dot" readonly onclick="display.value += '.'">
+            <input type="text" value="x" id="times" readonly onclick="display.value+= '*'">
+        </div>
+        <div class="last">
+            <input type="text" value="=" id="equals" readonly onclick="display.value = eval(display.value)">
+        </div>
+       </form> 
+    </div>
+    <script>
+        // let one = document.querySelector('#one');
+        // let two = document.querySelector('#two');
+        // let display = document.querySelector('#display')
+        // let equals = document.querySelector('#equals')
+        // one.addEventListener('click', show1);
+        // two.addEventListener('click', show2);
+        // equals.addEventListener('click', calcu);
+        // function show1(){
+        //     display.value += '1'
+        // }
+        // function show2(){
+        //     display.value = 2
+        // }
+
+    </script>
+</body>
+</html>
